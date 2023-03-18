@@ -58,17 +58,39 @@ class MainWindow(qtw.QWidget):
         clicked = lambda: press_it())
         self.layout().addWidget(my_button)
         
+        #creating a spinbox
+        
+        my_spin=qtw.QSpinBox(self, value=10, maximum=100, minimum=0, singleStep=5, prefix=("You are inteded to work her for "), suffix=(" years" ))
+        #QDoubleSpinbox for doubles
+        my_spin.setFont(qtg.QFont('Helvetica', 18))
+        
+        self.layout().addWidget(my_spin)
+        
+        
+        #creating a Text box
+        my_text = qtw.QTextEdit(self,
+			plainText="Work Experience",
+			#html = "<center><h1><em>Big Header Text!</em></h1></center>",
+			acceptRichText= False,
+			lineWrapMode=qtw.QTextEdit.FixedColumnWidth,
+			lineWrapColumnOrWidth=75,
+			placeholderText="Enter your job description",
+			readOnly=False,
+			)
+        self.layout().addWidget(my_text)
+        
+        
+        
         #show the app
         self.show()
         
         def press_it():
             #add name to the label
-            my_label.setText(f'Hello {my_combo.currentText()}')
-            my_entry.setText(f'You clicked {my_combo.currentText()}')
+            my_label.setText(f'Hello sweet {my_spin.value()}')
+            my_entry.setText(f'You clicked {my_spin.value()}!')
+            my_text.setPlainText(f'You wrote {my_text.toPlainText()}!')
             
-        #creating a spinbox
-        
-        my_spin
+
     
 app=qtw.QApplication([])
 mw=MainWindow()
