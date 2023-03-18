@@ -9,6 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from nFrame4 import Ui_Dialog4
 
 
 class Ui_Dialog3(object):
@@ -105,6 +106,14 @@ class Ui_Dialog3(object):
 
         self.retranslateUi(Dialog3)
         QtCore.QMetaObject.connectSlotsByName(Dialog3)
+        
+        self.pushbutton3.clicked.connect(self.fourthscr)
+
+    def fourthscr(self):
+        self.Dialog4 = QtWidgets.QDialog()
+        self.ui = Ui_Dialog4()
+        self.ui.setupUi(self.Dialog4)
+        self.Dialog4.show()
 
     def retranslateUi(self, Dialog3):
         _translate = QtCore.QCoreApplication.translate

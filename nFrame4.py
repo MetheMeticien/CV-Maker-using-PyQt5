@@ -100,9 +100,9 @@ class Ui_Dialog4(object):
         self.retranslateUi(Dialog4)
         QtCore.QMetaObject.connectSlotsByName(Dialog4)
 
-        self.pushButton4.clicked.connect(self.sixthscr)
+        self.pushButton4.clicked.connect(self.fifthscr)
 
-    def sixthscr(self):
+    def fifthscr(self):
         self.Dialog5 = QtWidgets.QDialog()
         self.ui = Ui_Dialog5()
         self.ui.setupUi(self.Dialog5)
