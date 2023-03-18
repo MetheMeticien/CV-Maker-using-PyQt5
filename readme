@@ -4,7 +4,7 @@ New github repo for hackathon 2023
 App has been developed in Completely Python Platforms
 
 for Frontends: QtDesigner has been used
-for Backends : PyQt5 has been used
+for Backends : PyQt5 has been used , laterly used OpenCV
 
 challenges:
 1. at first, Qt5 doesn't support python 3.11.0 which is the latest version of python and widely being used.
