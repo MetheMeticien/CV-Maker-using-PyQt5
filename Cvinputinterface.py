@@ -9,21 +9,42 @@ class MainWindow(qtw.QWidget):
         
         #set layout
         
-        self.setLayout(qtw.QVBoxLayout())
+        #self.setLayout(qtw.QVBoxLayout())
+        
+
+        
+        
+        form_layout = qtw.QFormLayout()
+        self.setLayout(form_layout)
+        
+        #Add stuffs/widgets
+        label_1 = qtw.QLabel("This is a Cool Label Row")
+        label_1.setFont(qtg.QFont("Helvetica", 24))
+        f_name = qtw.QLineEdit(self)
+        l_name = qtw.QLineEdit(self)
+        
+        #adding rows
+        form_layout.addRow(label_1)
+        form_layout.addRow("First Name", f_name)
+        form_layout.addRow("First Name", l_name)
+        form_layout.addRow(qtw.QPushButton("press me", clicked = lambda: press_it()))
         
         #create a label
         my_label = qtw.QLabel("Enter Your Information")
         self.layout().addWidget(my_label)
         
+        
+        
+        
         #changing fontsize
         
         my_label.setFont(qtg.QFont('Helvetica', 18))
         
-        #creating a box
-        my_entry = qtw.QLineEdit()
-        my_entry.setObjectName("Name Field")
-        my_entry.setText("Enter name")
-        self.layout().addWidget(my_entry)
+        # #creating a box
+        # my_entry = qtw.QLineEdit()
+        # my_entry.setObjectName("Name Field")
+        # my_entry.setText("Enter name")
+        # self.layout().addWidget(my_entry)
         
 
         
@@ -87,8 +108,9 @@ class MainWindow(qtw.QWidget):
         def press_it():
             #add name to the label
             my_label.setText(f'Hello sweet {my_spin.value()}')
-            my_entry.setText(f'You clicked {my_spin.value()}!')
+            #my_entry.setText(f'You clicked {my_spin.value()}!')
             my_text.setPlainText(f'You wrote {my_text.toPlainText()}!')
+            label_1.setText(f'You clicked the button, {f_name}!')
             
 
     
