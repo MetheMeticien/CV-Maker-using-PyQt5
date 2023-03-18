@@ -219,16 +219,6 @@
      <string>Next</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="descripbox">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>150</y>
-      <width>401</width>
-      <height>91</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
@@ -273,18 +263,28 @@
      <rect>
       <x>230</x>
       <y>60</y>
-      <width>300</width>
+      <width>351</width>
       <height>31</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="companybox">
+   <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>110</y>
-      <width>300</width>
-      <height>30</height>
+      <y>100</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>150</y>
+      <width>351</width>
+      <height>87</height>
      </rect>
     </property>
    </widget>

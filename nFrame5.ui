@@ -140,16 +140,6 @@ p, li { white-space: pre-wrap; }
     <string>Next</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Languagebox5">
-   <property name="geometry">
-    <rect>
-     <x>630</x>
-     <y>230</y>
-     <width>241</width>
-     <height>191</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QComboBox" name="Languagedropdown5">
    <property name="geometry">
     <rect>
@@ -176,6 +166,16 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#314da8;&quot;&gt;Linkedin Portfolio:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>226</y>
+     <width>221</width>
+     <height>191</height>
+    </rect>
    </property>
   </widget>
  </widget>

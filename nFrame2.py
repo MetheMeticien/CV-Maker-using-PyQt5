@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from nFrame3 import Ui_Dialog3
+import os
 
 
 class Ui_Dialog2(object):
@@ -65,6 +66,12 @@ class Ui_Dialog2(object):
         
     def thirdFrame(self):
         #connect 2nd frame
+        f = open("Name.txt", 'w')
+        f.write(self.Namebox.toPlainText())
+        f.close()
+        f = open("shortdescription.txt", 'w')
+        f.write(self.Descriptionbox.toPlainText())
+        f.close()
         self.Dialog3 = QtWidgets.QDialog()
         self.ui = Ui_Dialog3()
         self.ui.setupUi(self.Dialog3)

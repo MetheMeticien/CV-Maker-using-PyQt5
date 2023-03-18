@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from nFrame2 import Ui_Dialog2
+import os
 
 
 class Ui_Dialog1(object):
@@ -82,6 +83,10 @@ class Ui_Dialog1(object):
         self.inputbox1 = QtWidgets.QLineEdit(self.widget_2)
         self.inputbox1.setGeometry(QtCore.QRect(20, 110, 421, 61))
         self.inputbox1.setObjectName("inputbox1")
+
+
+
+
         
         
         self.retranslateUi(Dialog)
@@ -91,6 +96,9 @@ class Ui_Dialog1(object):
         
     def secFrame(self):
         #connect 2nd frame
+        f = open("Occupation.txt", 'w')
+        f.write(self.inputbox1.text())
+        f.close()
         self.Dialog2 = QtWidgets.QDialog()
         self.ui = Ui_Dialog2()
         self.ui.setupUi(self.Dialog2)

@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from nFrame4 import Ui_Dialog4
+import os
 
 
 class Ui_Dialog3(object):
@@ -79,9 +80,6 @@ class Ui_Dialog3(object):
         self.pushbutton3 = QtWidgets.QPushButton(self.widget_2)
         self.pushbutton3.setGeometry(QtCore.QRect(250, 250, 100, 40))
         self.pushbutton3.setObjectName("pushbutton3")
-        self.desbox2 = QtWidgets.QLineEdit(self.widget_2)
-        self.desbox2.setGeometry(QtCore.QRect(190, 190, 401, 51))
-        self.desbox2.setObjectName("desbox2")
         self.label_3 = QtWidgets.QLabel(self.widget_2)
         self.label_3.setGeometry(QtCore.QRect(20, 190, 161, 41))
         self.label_3.setObjectName("label_3")
@@ -94,22 +92,37 @@ class Ui_Dialog3(object):
         self.degreebox = QtWidgets.QTextEdit(self.widget_2)
         self.degreebox.setGeometry(QtCore.QRect(190, 70, 300, 31))
         self.degreebox.setObjectName("degreebox")
-        self.unibox = QtWidgets.QTextBrowser(self.widget_2)
-        self.unibox.setGeometry(QtCore.QRect(190, 110, 300, 30))
-        self.unibox.setObjectName("unibox")
         self.label_6 = QtWidgets.QLabel(self.widget_2)
         self.label_6.setGeometry(QtCore.QRect(20, 110, 161, 31))
         self.label_6.setObjectName("label_6")
         self.gradbox = QtWidgets.QDateEdit(self.widget_2)
         self.gradbox.setGeometry(QtCore.QRect(270, 150, 141, 31))
         self.gradbox.setObjectName("gradbox")
+        self.textEdit = QtWidgets.QTextEdit(self.widget_2)
+        self.textEdit.setGeometry(QtCore.QRect(190, 110, 301, 31))
+        self.textEdit.setObjectName("textEdit")
+        self.textEdit_2 = QtWidgets.QTextEdit(self.widget_2)
+        self.textEdit_2.setGeometry(QtCore.QRect(193, 190, 371, 51))
+        self.textEdit_2.setObjectName("textEdit_2")
 
         self.retranslateUi(Dialog3)
         QtCore.QMetaObject.connectSlotsByName(Dialog3)
-        
-        self.pushbutton3.clicked.connect(self.fourthscr)
+        self.pushbutton3.clicked.connect(self.fourthFrame)
 
-    def fourthscr(self):
+    def fourthFrame(self):
+        # connect 2nd frame
+        f = open("Degree.txt", 'w')
+        f.write(self.degreebox.toPlainText())
+        f.close()
+        f = open("university.txt", 'w')
+        f.write(self.textEdit.toPlainText())
+        f.close()
+        f = open("Graduationdate.txt", 'w')
+        f.write(self.gradbox.text())
+        f.close()
+        f = open("EducationDescription.txt", 'w')
+        f.write(self.textEdit_2.toPlainText())
+        f.close()
         self.Dialog4 = QtWidgets.QDialog()
         self.ui = Ui_Dialog4()
         self.ui.setupUi(self.Dialog4)

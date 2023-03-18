@@ -219,16 +219,6 @@
      <string>Next</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="Facebookbox6">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>420</y>
-      <width>311</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
@@ -274,17 +264,7 @@
       <x>340</x>
       <y>70</y>
       <width>300</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="Emailbox6">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>130</y>
-      <width>300</width>
-      <height>30</height>
+      <height>41</height>
      </rect>
     </property>
    </widget>
@@ -292,7 +272,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>250</y>
+      <y>260</y>
       <width>301</width>
       <height>91</height>
      </rect>
@@ -304,20 +284,20 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>370</y>
-      <width>211</width>
+      <width>231</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#314da8;&quot;&gt;Linkedin ID :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#314da8;&quot;&gt;Instagram ID :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>420</y>
       <width>221</width>
       <height>31</height>
@@ -327,33 +307,53 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#314da8;&quot;&gt;Facebook ID:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="Presentaddress6">
+   <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>180</y>
-      <width>481</width>
-      <height>71</height>
+      <y>120</y>
+      <width>311</width>
+      <height>41</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="Permanentaddress6">
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>170</y>
+      <width>531</width>
+      <height>87</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_3">
     <property name="geometry">
      <rect>
       <x>340</x>
       <y>270</y>
-      <width>481</width>
-      <height>81</height>
+      <width>531</width>
+      <height>87</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="Linkedinbox6">
+   <widget class="QTextEdit" name="textEdit_4">
     <property name="geometry">
      <rect>
       <x>340</x>
       <y>370</y>
-      <width>311</width>
-      <height>30</height>
+      <width>531</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>420</y>
+      <width>531</width>
+      <height>51</height>
      </rect>
     </property>
    </widget>
