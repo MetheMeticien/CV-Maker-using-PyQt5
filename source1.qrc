@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>cv1.jpg</file>
+    <file>cv1.jpg</file>
+    <file>cvf.jpg</file>
+    <file>resize2.png</file>
+    <file>resize.png</file>
+    <file>4128253.png</file>
+    <file>depositphotos_31854223-stock-illustration-vector-user-profile-avatar-man.jpg</file>
+    <file>cv2.jpg</file>
+    <file>cv2.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+  <qresource prefix="newPrefix"/>
+  <qresource prefix="newPrefix">
+    <file>admin-user-icon-4.jpg</file>
+  </qresource>
+</RCC>
