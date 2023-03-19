@@ -1,6 +1,20 @@
 #demo
 
 New github repo for hackathon 2023
+App has been developed in Completely Python Platforms
 
-some changes are made
+for Frontends: QtDesigner has been used
+for Backends : PyQt5 has been used , laterly used OpenCV and PIL
+
+challenges:
+1. at first, Qt5 doesn't support python 3.11.0 which is the latest version of python and widely being used.
+2.the Optimization for Qt designer along with version to version in several devices are a bit shaky and buggy.
+3. adding images in Qt designer created some certain problems while performing git oprations.
+4. extracting files from file and then implementing on Qt Designer created a problem  but we found an alternative way to solve it.
+
+Solutions:
+1. We had to downgrade the python to even start developing the project
+2. we  had to work around with those Qtdesginer features all along the project
+3. We used an alternative way without involving qrc files and used OpenCV library and PIL
+
 
