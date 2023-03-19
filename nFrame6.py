@@ -9,6 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import textwrap
+import cv2
 
 
 class Ui_Dialog6(object):
@@ -117,11 +119,10 @@ class Ui_Dialog6(object):
 
         self.retranslateUi(Dialog6)
         QtCore.QMetaObject.connectSlotsByName(Dialog6)
-        self.pushButton6.clicked.connect(self.seventhFrame)
+        self.pushButton6.clicked.connect(self.sixthFrame)
 
-    def seventhFrame(self):
+    def sixthFrame(self):
         # connect 2nd frame
-
         f = open("Phonenum.txt", 'w')
         f.write(self.Phonebox6.toPlainText())
         f.close()
@@ -134,12 +135,17 @@ class Ui_Dialog6(object):
         f = open("PermaAdd.txt", 'w')
         f.write(self.textEdit_3.toPlainText())
         f.close()
-        f = open("Instagram.txt", 'w')
+        f = open("Linkdin.txt", 'w')
         f.write(self.textEdit_4.toPlainText())
         f.close()
         f = open("facebook.txt", 'w')
         f.write(self.textEdit_5.toPlainText())
         f.close()
+        import subprocess
+        import finalcv
+        subprocess.run(["python", "finalcv.py"])
+        subprocess.run(["python", "openImage.py"])
+
 
     def retranslateUi(self, Dialog6):
         _translate = QtCore.QCoreApplication.translate
