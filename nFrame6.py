@@ -10,7 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import textwrap
-import cv2
+
 
 
 class Ui_Dialog6(object):
@@ -144,7 +144,7 @@ class Ui_Dialog6(object):
         import subprocess
         import finalcv
         subprocess.run(["python", "finalcv.py"])
-        subprocess.run(["python", "openImage.py"])
+        #subprocess.run(["python", "openImage.py"])
 
 
     def retranslateUi(self, Dialog6):

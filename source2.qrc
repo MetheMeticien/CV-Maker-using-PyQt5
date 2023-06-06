@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>cv2.jpg</file>
+  </qresource>
+  <qresource prefix="source2">
+    <file>BG2.png</file>
+  </qresource>
+</RCC>
